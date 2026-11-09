@@ -1,4 +1,4 @@
-# Understanding Prefect - Phases [DeepSeek]
+# Understanding Prefect - Phases
 
 ## **Phase 1: Environment Setup & Mental Model**
 
@@ -120,6 +120,8 @@ Once you have this foundation, you'll be able to formulate precise questions. Fo
 
 ## **Recommended Learning Resources**
 
+The key insight is that Prefect is designed to be *incremental*. You can start with a single `@flow` decorator on an existing script and add tasks, retries, deployments, and infrastructure one layer at a time. You don't need to understand everything before you start getting value.
+
 | **Resource** | **Why** |
 | --- | --- |
 | **Prefect Foundations** (free Instruqt course) | Structured, hands-on, covers flows/tasks → error handling → caching → Cloud |
@@ -127,5 +129,3 @@ Once you have this foundation, you'll be able to formulate precise questions. Fo
 | **Tutorial Overview** ([docs-2.prefect.io](https://docs-2.prefect.io/)) | Guided walkthrough of core concepts with clear prerequisites |
 | **Prefect 3.0 What's New** | Understand workers, events, and performance improvements if you're starting fresh |
 | **Prefect Community Slack** | Fastest place to get answers; the "Marvin" bot is particularly useful for "how do I..." questions |
-
-The key insight is that Prefect is designed to be *incremental*. You can start with a single `@flow` decorator on an existing script and add tasks, retries, deployments, and infrastructure one layer at a time. You don't need to understand everything before you start getting value.
