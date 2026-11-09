@@ -2,7 +2,7 @@
 
 ## **Phase 1: Environment Setup & Mental Model**
 
-[**Phase 1: Environment Setup & Mental Model**](./Phase 1 Environment Setup & Mental Model/Phase 1 Environment Setup & Mental Model.md)
+[**Phase 1: Environment Setup & Mental Model**](<./Phase 1 Environment Setup & Mental Model/Phase 1 Environment Setup & Mental Model.md>)
 
 - **Install Prefect** — `pip install -U prefect` (requires Python 3.9+). Prefect works in any Python environment you already use.
 - **Choose your backend** — You need either a self-hosted Prefect server (`prefect server start`) or a free Prefect Cloud account. Start with Prefect Cloud for the smoothest learning experience; it gives you a UI, logging, and scheduling out of the box without managing infrastructure.
