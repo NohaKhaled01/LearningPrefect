@@ -1,6 +1,6 @@
 # More details about get_run_logger()
 
-[Log Levels](More%20details%20about%20get_run_logger()/Log%20Levels%203faf18192572806da84af4de038c097e.md)
+[Log Levels](<./Log Levels.md>)
 
 ### **1. "logger is an instance of an object"**
 

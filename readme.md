@@ -12,7 +12,7 @@
 
 ## **Phase 2: Core Concepts (The Building Blocks)**
 
-[**Phase 2: Core Concepts (The Building Blocks**](<./Phases MD files/Phase 2 Environment Setup & Mental Model/Phase 2 Core Concepts (The Building Blocks).md>)
+[**Phase 2: Core Concepts (The Building Blocks)**](<./Phases MD files/Phase 2 Core Concepts (The Building Blocks)/Phase 2 Core Concepts (The Building Blocks).md>)
 
 - **Flows** — The top-level container. Any Python function becomes a flow with `@flow`. A flow is the core observable, deployable unit and the primary entrypoint to orchestrated work.
 - **Tasks** — The smallest unit of observed work. Decorate with `@task`. Tasks give you granular retries, caching, and observability. You can choose how much to break your logic into tasks—there's no wrong level of granularity, only trade-offs in control vs. complexity.
@@ -74,11 +74,11 @@
 
 - **Event-driven workflows** — Trigger flows based on external events (file arrival in S3, database changes, webhook). Prefect 3.0 has native event and automation support.
 
-[**Event-driven workflows**](<./Phases MD files/Phase 6 Advanced Patterns/Event-driven workflows/Event driven workflows Full Explanation - Not Summary.md>)
+[**Event-driven workflows**](<./Phases MD files/Phase 6 Advanced Patterns/Event-driven workflows/Event-driven workflows.md>)
 
 - **Pause and human-in-the-loop** — Use `pause_flow_run()` or `suspend_flow_run()` to wait for human approval or external input before continuing. Useful for approval gates in data pipelines.
 
-[**Pause and human-in-the-loop**](<./Phases MD files/Phase 6 Advanced Patterns/Pause and human-in-the-loop/Pause and human-in-the-loop Summary.md>)
+[**Pause and human-in-the-loop**](<./Phases MD files/Phase 6 Advanced Patterns/Pause and human-in-the-loop/Pause and human-in-the-loop.md>)
 
 - **Dynamic task creation** — Create tasks at runtime based on data (e.g., map over a list of unknown length). Prefect's `.map()` and `unmapped()` are key here.
 
@@ -90,7 +90,7 @@
 
 - **CLI mastery** — Learn `prefect deployment ls`, `prefect flow-run ls`, `prefect worker start`, `prefect work-pool create`, `prefect block register`. The CLI is often faster than the UI for debugging.
 
-[CLI Mastery](<./Phases MD files/Phase 6 Advanced Patterns/CLI Mastery.md>)
+[CLI Mastery](<./Phases MD files/Phase 6 Advanced Patterns/CLI Mastery/CLI Mastery.md>)
 
 ---
 

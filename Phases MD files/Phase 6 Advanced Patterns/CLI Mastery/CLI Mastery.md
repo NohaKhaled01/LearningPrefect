@@ -1,6 +1,6 @@
 # CLI Mastery
 
-[Summary](CLI%20Mastery/Summary%203f7f181925728037af4fe07f57d797c4.md)
+[Summary](<./CLI Mastery Summary.md>)
 
 Up until now, we've been using a mix of Python scripts, the `.deploy()` method, and the UI. But in the real world, when you're debugging a production issue at 2 AM or writing a CI/CD script, you don't want to open a browser or write a full Python script. You want to type a fast, precise command in your terminal.
 

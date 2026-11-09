@@ -5,7 +5,7 @@
 - **The Concept:** Replaces `print()` with structured logs that are sent to the Prefect API and saved in the database.
 - **How it works:** `get_run_logger()` is a function that returns a **Logger object** (an instance) tied to the current Flow/Task context.
 
-[More details about get_run_logger()](Phase%203%20Making%20It%20Useful%20(First%20Real%20Workflow)/More%20details%20about%20get_run_logger()%203faf1819257280efbccbe08d1ad0c1ea.md)
+[More details about get_run_logger()](<./More details about get_run_logger().md>)
 
 - **Log Levels (Triage System):**
     - `debug`: Tiny details (mostly for local dev).
