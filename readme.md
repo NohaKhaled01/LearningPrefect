@@ -12,7 +12,7 @@
 
 ## **Phase 2: Core Concepts (The Building Blocks)**
 
-[**Phase 2: Core Concepts (The Building Blocks**](<.Phases MD files/Phase 2 Environment Setup & Mental Model/Phase 2 Core Concepts (The Building Blocks).md>)
+[**Phase 2: Core Concepts (The Building Blocks**](<./Phases MD files/Phase 2 Environment Setup & Mental Model/Phase 2 Core Concepts (The Building Blocks).md>)
 
 - **Flows** — The top-level container. Any Python function becomes a flow with `@flow`. A flow is the core observable, deployable unit and the primary entrypoint to orchestrated work.
 - **Tasks** — The smallest unit of observed work. Decorate with `@task`. Tasks give you granular retries, caching, and observability. You can choose how much to break your logic into tasks—there's no wrong level of granularity, only trade-offs in control vs. complexity.
@@ -24,7 +24,7 @@
 
 ## **Phase 3: Making It Useful (First Real Workflow)**
 
-[**Phase 3: Making It Useful (First Real Workflow)**](<.Phases MD files/Phase 3 Making It Useful (First Real Workflow)/Phase 3 Making It Useful (First Real Workflow).md>)
+[**Phase 3: Making It Useful (First Real Workflow)**](<./Phases MD files/Phase 3 Making It Useful (First Real Workflow)/Phase 3 Making It Useful (First Real Workflow).md>)
 
 - **Write a flow with tasks** — Take a simple script (e.g., fetch data → transform → save) and split it into `@task`-decorated functions called inside a `@flow`. Run it locally. Watch it appear in the UI.
 - **Add retries** — Use `@task(retries=2, retry_delay_seconds=10)` to handle transient failures (API hiccups, network blips). This is one of the most immediately valuable features.
@@ -38,35 +38,35 @@
 
 - **Error handling patterns** — Understand how Prefect handles exceptions. A task that raises an exception fails; a flow can catch it or let it propagate. Learn about `on_failure` hooks and custom failure states.
 
-[Phase 4.1: Error Handling Hooks](<.Phases MD files/Phase 4 Reliability & Observability/Phase 4 1 Error Handling Hooks.md>)
+[Phase 4.1: Error Handling Hooks](<./Phases MD files/Phase 4 Reliability & Observability/Phase 4 1 Error Handling Hooks.md>)
 
 - **Caching** — Use `cache_key_fn` or `cache_policy` on tasks to avoid re-running expensive computations. Understand the difference between in-memory caching and persistent caching across runs.
 
-[Phase 4.2: Caching](<.Phases MD files/Phase 4 Reliability & Observability/Phase 4 2 Caching.md>)
+[Phase 4.2: Caching](<./Phases MD files/Phase 4 Reliability & Observability/Phase 4 2 Caching.md>)
 
 - **Concurrency** — Use `.submit()` instead of calling tasks directly to run them concurrently. Understand task runners (default is `ThreadPoolTaskRunner`; use `ProcessPoolTaskRunner` for CPU-bound work).
 
-[Phase 4.3: Concurrency - Running in parallel](<.Phases MD files/Phase 4 Reliability & Observability/Phase 4 3 Concurrency - Running in parallel.md>)
+[Phase 4.3: Concurrency - Running in parallel](<./Phases MD files/Phase 4 Reliability & Observability/Phase 4 3 Concurrency - Running in parallel.md>)
 
 - **Flow runs and deployment runs** — Distinguish between a *flow run* (one execution) and a *deployment run* (a scheduled/triggered run of a deployment). Understand how Prefect retries, cancels, and resumes runs.
 
-[Phase 4.4: **Flow runs and deployment runs**](<.Phases MD files/Phase 4 Reliability & Observability/Phase 4 4 Flow runs and deployment runs.md>)
+[Phase 4.4: **Flow runs and deployment runs**](<./Phases MD files/Phase 4 Reliability & Observability/Phase 4 4 Flow runs and deployment runs.md>)
 
 ---
 
 ## **Phase 5: Deployment & Infrastructure**
 
-[Phase 5 - **Deployment & Infrastructure (minus Blocks)**](<.Phases MD files/Phase 5 Deployment & Infrastructure/Phase 5 - Deployment & Infrastructure (minus Block).md>)
+[Phase 5 - **Deployment & Infrastructure (minus Blocks)**](<./Phases MD files/Phase 5 Deployment & Infrastructure/Phase 5 - Deployment & Infrastructure (minus Block).md>)
 
 - **Work Pools & Workers** — A work pool defines *where* and *how* your flows run (e.g., local process, Docker, Kubernetes, cloud VM). A worker polls the pool and executes flows. This is Prefect 3.x's replacement for the older "agents" concept.
 - **Blocks** — Prefect's way of storing configuration securely: credentials, cloud storage paths, database connections, etc. Blocks are reusable across deployments. Learn to create a block (e.g., an AWS credential block) and reference it in a deployment.
 
-[Phase 5.2: Blocks & Secrets](<.Phases MD files/Phase 5 Deployment & Infrastructure/Phase 5 2 Blocks & Secrets.md>)
+[Phase 5.2: Blocks & Secrets](<./Phases MD files/Phase 5 Deployment & Infrastructure/Phase 5 2 Blocks & Secrets.md>)
 
 - **Deployment methods** — Compare `.serve()` (simplest, local worker), `prefect deploy` CLI, and programmatic deployment via `flow.deploy()`. Know when to use each.
 - **Infrastructure as code** — For production, define your work pool and deployment in a `prefect.yaml` or via the Python API. This lets you version-control your orchestration config alongside your code.
 
-[CI/CD Definition](<.Phases MD files/Phase 5 Deployment & Infrastructure/Side Phase CI CD Definition.md>)
+[CI/CD Definition](<./Phases MD files/Phase 5 Deployment & Infrastructure/Side Phase CI CD Definition.md>)
 
 ---
 
@@ -74,23 +74,23 @@
 
 - **Event-driven workflows** — Trigger flows based on external events (file arrival in S3, database changes, webhook). Prefect 3.0 has native event and automation support.
 
-[**Event-driven workflows**](<.Phases MD files/Phase 6 Advanced Patterns/Event-driven workflows/Event driven workflows Full Explanation - Not Summary.md>)
+[**Event-driven workflows**](<./Phases MD files/Phase 6 Advanced Patterns/Event-driven workflows/Event driven workflows Full Explanation - Not Summary.md>)
 
 - **Pause and human-in-the-loop** — Use `pause_flow_run()` or `suspend_flow_run()` to wait for human approval or external input before continuing. Useful for approval gates in data pipelines.
 
-[**Pause and human-in-the-loop**](<.Phases MD files/Phase 6 Advanced Patterns/Pause and human-in-the-loop/Pause and human-in-the-loop Summary.md>)
+[**Pause and human-in-the-loop**](<./Phases MD files/Phase 6 Advanced Patterns/Pause and human-in-the-loop/Pause and human-in-the-loop Summary.md>)
 
 - **Dynamic task creation** — Create tasks at runtime based on data (e.g., map over a list of unknown length). Prefect's `.map()` and `unmapped()` are key here.
 
-[**Dynamic task creation**](<.Phases MD files/Phase 6 Advanced Patterns/Dynamic task creation.md>)
+[**Dynamic task creation**](<./Phases MD files/Phase 6 Advanced Patterns/Dynamic task creation.md>)
 
 - **Testing** — Use `prefect_test_harness()` to test flows and tasks without hitting the real API or database. Write unit tests for your task functions independently of Prefect.
 
-[Testing](<.Phases MD files/Phase 6 Advanced Patterns/Testing/Testing.md>)
+[Testing](<./Phases MD files/Phase 6 Advanced Patterns/Testing/Testing.md>)
 
 - **CLI mastery** — Learn `prefect deployment ls`, `prefect flow-run ls`, `prefect worker start`, `prefect work-pool create`, `prefect block register`. The CLI is often faster than the UI for debugging.
 
-[CLI Mastery](<.Phases MD files/Phase 6 Advanced Patterns/CLI Mastery.md>)
+[CLI Mastery](<./Phases MD files/Phase 6 Advanced Patterns/CLI Mastery.md>)
 
 ---
 
@@ -103,7 +103,7 @@ Do at least two of these to cement your knowledge:
 - **Parameterized batch job** — A deployment that accepts parameters (e.g., date range) and processes data for that range. Trigger it via the UI and via the CLI.
 - **Failure recovery demo** — Intentionally fail a task, configure a retry, and observe Prefect resuming from the last successful point (not from the beginning).
 
-[Notes from Exercises](<.Phases MD files/Phase 7 Practical Projects (Consolidation)/Notes from Exercises.md>)
+[Notes from Exercises](<./Phases MD files/Phase 7 Practical Projects (Consolidation)/Notes from Exercises.md>)
 
 ---
 
