@@ -8,6 +8,8 @@ I prepared this guideline as I was learning Prefect myself with DeepSeek AI as m
 
 This guideline can be used as a guideline for your own learning, and you can share it with the AI tool of your choice to help explain parts of it, and to create custom exercises for you to practice on. Phase 7 (practical projects) contains multiple suggested projects to work on as more practice.
 
+Each title contains the summary points, plus detailed notes in the included paths/links.
+
 There are also multiple py files for the code I wrote in each phase, in addition to 4 exercise and their codes in phase 7. Feel free to check them if needed.
 
 ## **Phase 1: Environment Setup & Mental Model**
