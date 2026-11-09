@@ -1,0 +1,11 @@
+#Single files
+--
+
+#folders
+venv/
+Exercises/
+__pycache__/
+
+
+# Ignore all files with .ipynb extension
+*.ipynb
