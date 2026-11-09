@@ -8,13 +8,7 @@ I prepared this guideline as I was learning Prefect myself with DeepSeek AI as m
 
 This guideline can be used as a guidelist or guideline for your own learning, and you can share it with the AI tool of your choice to help explain parts of it, and to create custom exercises for you to practice on. Phase 7 (practical projects) contains multiple suggested projects to work on as more practice.
 
-There are also multiple py files for the code I wrote in each phase. Feel free to check it if needed.
-
-Only two exercises were done before moving on to practicing on projects.
-
-Exercise 1: Fetch posts from an API (JSONPlaceholder), transform it, and save it to a local directory, using tasks and flow decorators
-Exercise 2: Fetch a *defined number* of posts from an API (JSONPlaceholder), transform it, and save it to a local directory, using tasks and flow decorators
-Exercise 3: Use `.map()` to fetch data for multiple users concurrently instead of sequentially + Simulate slow API responses using `time.sleep()` to observe concurrency in action.
+There are also multiple py files for the code I wrote in each phase, in addition to exercise codes in phase 7. Feel free to check them if needed.
 
 ## **Phase 1: Environment Setup & Mental Model**
 
@@ -119,7 +113,7 @@ Do at least two of these to cement your knowledge:
 - **Parameterized batch job** — A deployment that accepts parameters (e.g., date range) and processes data for that range. Trigger it via the UI and via the CLI.
 - **Failure recovery demo** — Intentionally fail a task, configure a retry, and observe Prefect resuming from the last successful point (not from the beginning).
 
-[Notes from Exercises](<./Phases MD files/Phase 7 Practical Projects (Consolidation)/Notes from Exercises.md>)
+[The exercises I did, and my notes from them](<./Phases MD files/Phase 7 Practical Projects (Consolidation)/Notes from Exercises.md>)
 
 ---
 

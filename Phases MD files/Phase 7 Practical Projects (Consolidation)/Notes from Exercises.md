@@ -6,13 +6,17 @@
 
 [Exercises 1 & 2 Code: Exercise 2](<./Exercises 1 & 2 Creating an ETL, Making it Dynamic/ETL_Exercise2_dynamic.py>)
 
+---
+
 [Exercises 3 Notes: Running in Parallel](<./Exercise 3 - Running in Parallel/Exercise 3 - Running in Parallel.md>)
 
 [Exercises 3 Code: Exercise 3](<./Exercise 3 - Running in Parallel/Exercise3_mapping.py>)
 
 [Exercises 3 Code: Exercise 3.1](<./Exercise 3 - Running in Parallel/Exercise3_mapping_flowcontinue.py>)
 
-### Comparison summary across all four exercises
+---
+
+### Concepts covered in the four exercises:
 
 | | Ex. 1 | Ex. 2 | Ex. 3 | **Ex.3.1** |
 | :--- | :--- | :--- | :--- | :--- |
