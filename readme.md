@@ -4,11 +4,11 @@ A guideline for learning how to use Prefect [the data orchestration tool], from 
 
 I prepared this guideline as I was learning Prefect myself with DeepSeek AI as my teacher. The phases were devised by DeepSeek, and we (DeepSeek & I) went over the phases one by one, where I understood each concept and wrote its code myself. The explanations and summaries for each phase were written by DeepSeek after finishing the phase.
 
-## ** How to use it: **
+## How to use it:
 
-This guideline can be used as a guidelist or guideline for your own learning, and you can share it with the AI tool of your choice to help explain parts of it, and to create custom exercises for you to practice on. Phase 7 (practical projects) contains multiple suggested projects to work on as more practice.
+This guideline can be used as a guideline for your own learning, and you can share it with the AI tool of your choice to help explain parts of it, and to create custom exercises for you to practice on. Phase 7 (practical projects) contains multiple suggested projects to work on as more practice.
 
-There are also multiple py files for the code I wrote in each phase, in addition to exercise codes in phase 7. Feel free to check them if needed.
+There are also multiple py files for the code I wrote in each phase, in addition to 4 exercise and their codes in phase 7. Feel free to check them if needed.
 
 ## **Phase 1: Environment Setup & Mental Model**
 
