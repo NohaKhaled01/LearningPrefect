@@ -1,4 +1,20 @@
-# Understanding Prefect - Phases
+# Learning & Understanding Prefect - Zero to Hero Guide
+
+A guideline for learning how to use Prefect [the data orchestration tool], from the very basics up to advanced concepts like event driven workflows and pausing workflows for human input.
+
+I prepared this guideline as I was learning Prefect myself with DeepSeek AI as my teacher. The phases were devised by DeepSeek, and we (DeepSeek & I) went over the phases one by one, where I understood each concept and wrote its code myself. The explanations and summaries for each phase were written by DeepSeek after finishing the phase.
+
+## ** How to use it: **
+
+This guideline can be used as a guidelist or guideline for your own learning, and you can share it with the AI tool of your choice to help explain parts of it, and to create custom exercises for you to practice on. Phase 7 (practical projects) contains multiple suggested projects to work on as more practice.
+
+There are also multiple py files for the code I wrote in each phase. Feel free to check it if needed.
+
+Only two exercises were done before moving on to practicing on projects.
+
+Exercise 1: Fetch posts from an API (JSONPlaceholder), transform it, and save it to a local directory, using tasks and flow decorators
+Exercise 2: Fetch a *defined number* of posts from an API (JSONPlaceholder), transform it, and save it to a local directory, using tasks and flow decorators
+Exercise 3: Use `.map()` to fetch data for multiple users concurrently instead of sequentially + Simulate slow API responses using `time.sleep()` to observe concurrency in action.
 
 ## **Phase 1: Environment Setup & Mental Model**
 

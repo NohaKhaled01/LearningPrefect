@@ -10,7 +10,7 @@ import os
 # %%
 url = 'https://jsonplaceholder.typicode.com/posts'
 
-# %%
+# %% Extract the data, with a try and except block for network issues
 @task(retries = 3, retry_delay_seconds = 5)
 def extract_data():
   logger = get_run_logger()
@@ -36,7 +36,7 @@ def extract_data():
     raise
 
 
-# %%
+# %% Simple transformations to the extracted data
 @task
 def transform_data(data):
   logger = get_run_logger()
@@ -45,7 +45,7 @@ def transform_data(data):
   logger.info(f"Deleted column 'body' from data. {len(df)} rows affected")
   return df
 
-# %%
+# %% Save  data to a local csv file in the current working directory
 @task
 def save_data(df):
   logger = get_run_logger()
@@ -53,7 +53,7 @@ def save_data(df):
   df.to_csv('df_data.csv', index = False)
   logger.info('Saved file!')
 
-# %%
+# %% The flow - extract data - transform data - save data
 @flow
 def etl_pipeline():
   logger = get_run_logger()

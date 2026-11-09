@@ -43,7 +43,7 @@ def fetch_flow():
 if __name__ == "__main__":
     fetch_flow.from_source(
     source = str(Path(__file__).parent),
-    entrypoint = "Exercise3_mapping.py:fetch_flow"
+    entrypoint = "Exercise3_mapping_flowcontinue.py:fetch_flow"
     ).deploy(
       name = "mapping-pipeline-deployment",
       work_pool_name = "my-process-pool",

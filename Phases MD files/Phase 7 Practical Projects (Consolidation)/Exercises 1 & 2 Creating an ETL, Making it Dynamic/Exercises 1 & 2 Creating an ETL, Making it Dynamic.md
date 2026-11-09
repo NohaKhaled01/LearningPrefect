@@ -1,8 +1,8 @@
 # Exercises 1 & 2: Creating an ETL, Making it Dynamic
 
-[ETL_Exercise2_dynamic.py](Exercises%201%20&%202%20Creating%20an%20ETL,%20Making%20it%20Dynamic/ETL_Exercise2_dynamic.py)
+[ETL_Exercise1.py](<./ETL_Exercise1.py>)
 
-[ETL_Exercise1.py](Exercises%201%20&%202%20Creating%20an%20ETL,%20Making%20it%20Dynamic/ETL_Exercise1.py)
+[ETL_Exercise2_dynamic.py](<./ETL_Exercise2_dynamic.py>)
 
 **1. The Core ETL Pattern (Exercise 1)**
 

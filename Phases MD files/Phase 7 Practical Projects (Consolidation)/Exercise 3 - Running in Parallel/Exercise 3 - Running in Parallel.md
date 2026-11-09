@@ -2,7 +2,7 @@
 
 [Exercise3_mapping.py](Exercise%203%20-%20Running%20in%20Parallel/Exercise3_mapping.py)
 
-Script with the passing of user ids that didn’t complete using raise on failure = false:
+Script with the passing of user ids that didn’t complete using raise on failure = false - to continue the flow with error user names in the results, instead of crashing the whole flow:
 
 [Exercise3_mapping.py](Exercise%203%20-%20Running%20in%20Parallel/Exercise3_mapping%201.py)
 
